@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -32,7 +33,6 @@
     <div class="hero-achtergrond"></div>
     <div class="container">
         <div class="hero-inhoud">
-            <div class="hero-badge">Portfolio 2024</div>
             <div class="hero-cirkel">
                 <div class="hero-cirkel-tekst">
                     <svg viewBox="0 0 200 200">
@@ -49,21 +49,15 @@
                 </div>
             </div>
             <h1 class="hero-titel">
-                <span class="hero-titel-klein">by Gy Colin</span>
                 <span class="hero-titel-groot">SILA</span>
                 <span class="hero-titel-groot">DEVECI</span>
             </h1>
             <p class="hero-ondertitel">Student Digitale Vormgeving</p>
-            <a href="#over" class="knop-hero">Ontdek Meer</a>
         </div>
-    </div>
-    <div class="scroll-indicator">
-        <span>Scroll</span>
-        <div class="scroll-lijn"></div>
     </div>
 </header>
 
-<section id="over" class="over">
+<section class="over">
     <div class="container">
         <div class="sectie-header">
             <span class="sectie-nummer">01</span>
@@ -73,7 +67,7 @@
         <div class="over-grid">
             <div class="over-kaart kaart-bordeaux">
                 <div class="kaart-icoon">✨</div>
-                <h3>Quem sou eu?</h3>
+                <h3>Wie ben ik?</h3>
                 <p>Creatieve en gemotiveerde student Digitale Vormgeving met een sterke interesse in visueel design, branding en digitale media.</p>
                 <p>Leergierig, nauwkeurig en met een sterk oog voor detail en esthetiek. Communicatief vaardig en een echte teamplayer.</p>
                 <div class="kaart-stats">
@@ -90,34 +84,13 @@
 
             <div class="over-kaart kaart-cream">
                 <div class="kaart-icoon">🎯</div>
-                <h3>O que é UGC?</h3>
+                <h3>Waarom?</h3>
                 <p><strong>Waarom Digitale Vormgeving?</strong></p>
                 <p>Ik koos voor deze opleiding omdat ik gefascineerd ben door de kracht van visuele communicatie en hoe design mensen kan inspireren en verbinden.</p>
                 <p><strong>Wat maakt mij speciaal?</strong></p>
                 <p>Mijn unieke combinatie van creativiteit, technische vaardigheden en een passie voor storytelling door design. Ik ben flexibel, stressbestendig en snel in het oppakken van nieuwe tools en technieken.</p>
             </div>
         </div>
-
-        <div class="voordelen-sectie">
-            <h3 class="voordelen-titel">Benefícios do UGC para sua marca</h3>
-            <div class="voordelen-grid">
-                <div class="voordeel-item">
-                    <div class="voordeel-nummer">93%</div>
-                    <p>Dos clientes confiam mais em conteúdo criado por outros clientes do que em publicidade tradicional</p>
-                </div>
-                <div class="voordeel-item">
-                    <div class="voordeel-icoon">🎨</div>
-                    <p>Creatief denken en visueel ontwerpen</p>
-                </div>
-                <div class="voordeel-item">
-                    <div class="voordeel-icoon">📱</div>
-                    <p>Digitale media en social media design</p>
-                </div>
-                <div class="voordeel-item">
-                    <div class="voordeel-icoon">💡</div>
-                    <p>Innovatieve oplossingen bedenken</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -129,52 +102,40 @@
             <h2 class="sectie-titel">Mijn Werk</h2>
         </div>
 
-        <div class="project-filters">
-            <button class="filter-knop active" data-filter="alle">ALLE</button>
-            <button class="filter-knop" data-filter="web">WEB DESIGN</button>
-            <button class="filter-knop" data-filter="ui">UI DESIGN</button>
-        </div>
-
         <div class="projecten-grid">
-            <article class="project-kaart" data-categorie="web">
+            <article class="project-kaart">
                 <div class="project-afbeelding">
                     <img src="images/project1.jpg" alt="Portfolio Website" onerror="this.src='images/placeholder.jpg'">
-                    <div class="project-overlay">
-                        <button class="knop-bekijk" onclick="openModal('project1')">Bekijk Details</button>
-                    </div>
                 </div>
                 <div class="project-info">
                     <span class="project-tag">WEB DESIGN</span>
                     <h3 class="project-titel">Portfolio Website</h3>
                     <p class="project-beschrijving">School Project • Figma, HTML, CSS, JavaScript</p>
+                    <p class="project-details-tekst">Een persoonlijke portfolio website ontworpen en ontwikkeld voor de opleiding Digitale Vormgeving. Volledig verantwoordelijk voor het ontwerp in Figma, de HTML/CSS structuur, JavaScript interacties en responsive design.</p>
                 </div>
             </article>
 
-            <article class="project-kaart" data-categorie="web">
+            <article class="project-kaart">
                 <div class="project-afbeelding">
                     <img src="images/project2.jpg" alt="Restaurant Website" onerror="this.src='images/placeholder.jpg'">
-                    <div class="project-overlay">
-                        <button class="knop-bekijk" onclick="openModal('project2')">Bekijk Details</button>
-                    </div>
                 </div>
                 <div class="project-info">
                     <span class="project-tag">WEB DESIGN</span>
                     <h3 class="project-titel">Restaurant Website</h3>
                     <p class="project-beschrijving">School Project • HTML, CSS, JavaScript</p>
+                    <p class="project-details-tekst">Een moderne website voor een fictief restaurant met focus op gebruiksvriendelijkheid. Ontwerp van de user interface, implementatie van HTML/CSS layout, en toevoegen van interactieve elementen.</p>
                 </div>
             </article>
 
-            <article class="project-kaart" data-categorie="ui">
+            <article class="project-kaart">
                 <div class="project-afbeelding">
                     <img src="images/project3.jpg" alt="Ring Website" onerror="this.src='images/placeholder.jpg'">
-                    <div class="project-overlay">
-                        <button class="knop-bekijk" onclick="openModal('project3')">Bekijk Details</button>
-                    </div>
                 </div>
                 <div class="project-info">
                     <span class="project-tag">UI DESIGN</span>
                     <h3 class="project-titel">Ring Website</h3>
                     <p class="project-beschrijving">School Project • Figma</p>
+                    <p class="project-details-tekst">UI/UX ontwerp voor een e-commerce website gespecialiseerd in sieraden. Volledig verantwoordelijk voor het UI ontwerp, wireframes, prototyping en user flow in Figma.</p>
                 </div>
             </article>
         </div>
@@ -218,7 +179,7 @@
                     </div>
                     <div class="tool-moderne-item">
                         <div class="tool-moderne-icoon">
-                            <span class="tool-letter"></></span>
+                            <span class="tool-letter">WB</></span>
                         </div>
                         <span class="tool-naam">HTML/CSS</span>
                     </div>
@@ -232,7 +193,7 @@
             </div>
 
             <div class="vaardigheden-kaart kaart-cream">
-                <h3>Como Funciona</h3>
+                <h3>Hoe werk ik</h3>
                 <div class="stappen-lijst">
                     <div class="stap-item">
                         <div class="stap-icoon">📋</div>
@@ -259,7 +220,7 @@
             </div>
 
             <div class="vaardigheden-kaart kaart-bordeaux">
-                <h3>Vamos trabalhar juntos</h3>
+                <h3>Laten we samenwerken</h3>
                 <p class="samenwerken-tekst">
                     Als student ben ik altijd op zoek naar nieuwe uitdagingen en leermogelijkheden.
                     Ik werk graag samen aan creatieve projecten en ben enthousiast om mijn vaardigheden verder te ontwikkelen.
@@ -326,17 +287,12 @@
                 </div>
 
                 <div class="social-links">
-                    <a href="#" class="social-icoon" aria-label="Instagram">
+                    <a href="https://www.instagram.com/dv.sila/" target="_blank" rel="noopener noreferrer" class="social-icoon" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-icoon" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icoon" aria-label="TikTok">
+                    <a href="https://www.tiktok.com/@watkijkjij.s?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-icoon" aria-label="TikTok">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                         </svg>
@@ -383,15 +339,6 @@
                 <p class="footer-tagline">Student Digitale Vormgeving</p>
             </div>
             <div class="footer-links">
-                <h4>Links</h4>
-                <ul>
-                    <li><a href="#over">Over Mij</a></li>
-                    <li><a href="#projecten">Projecten</a></li>
-                    <li><a href="#vaardigheden">Vaardigheden</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
                 <h4>Juridisch</h4>
                 <ul>
                     <li><a href="privacy.html">Privacy Policy</a></li>
@@ -400,7 +347,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Sila Deveci. Alle rechten voorbehouden.</p>
+            <p>© 2024 Sila Deveci. Alle rechten voorbehouden.</p>
             <p class="footer-credits">Gemaakt met HTML, CSS & JavaScript</p>
         </div>
     </div>
