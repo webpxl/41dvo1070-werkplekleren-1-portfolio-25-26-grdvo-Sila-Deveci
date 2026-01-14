@@ -1059,3 +1059,865 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     transform: rotate(90deg);
     background: var(--kleur-bordeaux);
 }
+
+//PRIVACY PAGINA
+
+  .privacy-pagina {
+      padding-top: 80px;
+      background: var(--kleur-cream);
+  }
+
+/* Hero Sectie */
+.privacy-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker) 0%, var(--kleur-bordeaux));
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy-hero-achtergrond {
+    position: absolute;
+    inset: 0;
+    background-image:
+            radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.privacy-hero-inhoud {
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--kleur-off-white);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.privacy-titel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-titel-groot {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: var(--kleur-off-white);
+    line-height: 0.9;
+}
+
+.privacy-titel-klein {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--kleur-cream);
+}
+
+.privacy-ondertitel {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--kleur-cream);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.privacy-datum {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* Navigatie Terug */
+.nav-terug {
+    display: flex;
+    align-items: center;
+}
+
+.knop-terug {
+    padding: 0.75rem 1.5rem;
+    background: var(--kleur-bordeaux-donker);
+    color: var(--kleur-off-white);
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    transition: var(--overgang);
+}
+
+.knop-terug:hover {
+    background: var(--kleur-bordeaux);
+    transform: translateX(-5px);
+}
+
+/* Secties */
+.privacy-sectie {
+    padding: 3rem 0;
+}
+
+.privacy-sectie-alt {
+    background: var(--kleur-off-white);
+}
+
+.privacy-intro {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--kleur-grijs);
+}
+
+.privacy-intro strong {
+    color: var(--kleur-bordeaux-donker);
+    font-weight: 700;
+}
+
+.privacy-lijst {
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy-lijst li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    color: var(--kleur-zwart);
+    font-weight: 500;
+}
+
+.privacy-lijst li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--kleur-bordeaux);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* Info Kaarten */
+.privacy-info-kaart {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--kleur-bordeaux);
+}
+
+.info-icoon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.info-tekst h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.info-tekst p {
+    color: var(--kleur-grijs);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Privacy Kaart */
+.privacy-kaart {
+    background: var(--kleur-off-white);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--schaduw-lg);
+    margin-bottom: 2rem;
+}
+
+.privacy-sectie-alt .privacy-kaart {
+    background: var(--kleur-cream);
+}
+
+.privacy-kaart-header {
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    color: var(--kleur-off-white);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy-kaart-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.privacy-nummer {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 1;
+    margin-bottom: -0.75rem;
+}
+
+.privacy-kaart-header h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--kleur-off-white);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-inhoud {
+    padding: 2.5rem;
+}
+
+/* Gebruik Grid & Kaarten */
+.gebruik-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gebruik-kaart {
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    color: var(--kleur-off-white);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--schaduw-md);
+    transition: var(--overgang);
+}
+
+.gebruik-kaart:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--schaduw-xl);
+}
+
+.gebruik-icoon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gebruik-kaart h4 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--kleur-off-white);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.gebruik-kaart p {
+    color: var(--kleur-cream);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cookies Kaarten */
+.cookies-kaart {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.cookies-icoon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+/* --- Algemeen & Hero Sectie --- */
+.privacy-pagina {
+    padding-top: 80px;
+    background: var(--kleur-cream);
+}
+
+/* Hero Sectie */
+.privacy-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker) 0%, var(--kleur-bordeaux));
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy-hero-achtergrond {
+    position: absolute;
+    inset: 0;
+    background-image:
+            radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.privacy-hero-inhoud {
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--kleur-off-white);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.privacy-titel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-titel-groot {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: var(--kleur-off-white);
+    line-height: 0.9;
+}
+
+.privacy-titel-klein {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--kleur-cream);
+}
+
+.privacy-ondertitel {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--kleur-cream);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.privacy-datum {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* --- Navigatie & Secties --- */
+/* Navigatie Terug */
+.nav-terug {
+    display: flex;
+    align-items: center;
+}
+
+.knop-terug {
+    padding: 0.75rem 1.5rem;
+    background: var(--kleur-bordeaux-donker);
+    color: var(--kleur-off-white);
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    transition: var(--overgang);
+}
+
+.knop-terug:hover {
+    background: var(--kleur-bordeaux);
+    transform: translateX(-5px);
+}
+
+/* Secties */
+.privacy-sectie {
+    padding: 3rem 0;
+}
+
+.privacy-sectie-alt {
+    background: var(--kleur-off-white);
+}
+
+/* --- Privacy Kaarten & Inhoud --- */
+.privacy-kaart {
+    background: var(--kleur-off-white);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--schaduw-lg);
+    margin-bottom: 2rem;
+}
+
+.privacy-sectie-alt .privacy-kaart {
+    background: var(--kleur-cream);
+}
+
+.privacy-kaart-header {
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    color: var(--kleur-off-white);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy-kaart-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.privacy-nummer {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 1;
+    margin-bottom: -0.75rem;
+}
+
+.privacy-kaart-header h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--kleur-off-white);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-inhoud {
+    padding: 2.5rem;
+}
+
+.privacy-intro {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--kleur-grijs);
+}
+
+.privacy-intro strong {
+    color: var(--kleur-bordeaux-donker);
+    font-weight: 700;
+}
+
+.privacy-lijst {
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy-lijst li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    color: var(--kleur-zwart);
+    font-weight: 500;
+}
+
+.privacy-lijst li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--kleur-bordeaux);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* --- Info & Gebruik Kaarten --- */
+/* Info Kaarten */
+.privacy-info-kaart {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--kleur-bordeaux);
+}
+
+.info-icoon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.info-tekst h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.info-tekst p {
+    color: var(--kleur-grijs);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Gebruik Grid */
+.gebruik-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gebruik-kaart {
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    color: var(--kleur-off-white);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--schaduw-md);
+    transition: var(--overgang);
+}
+
+.gebruik-kaart:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--schaduw-xl);
+}
+
+.gebruik-icoon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gebruik-kaart h4 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--kleur-off-white);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.gebruik-kaart p {
+    color: var(--kleur-cream);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Cookies & Rechten --- */
+/* Cookies Kaarten */
+.cookies-kaart {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.cookies-icoon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.cookies-tekst h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.cookies-tekst p {
+    color: var(--kleur-grijs);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Rechten Grid */
+.rechten-intro {
+    font-size: 1.125rem;
+    color: var(--kleur-grijs);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.rechten-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.recht-kaart {
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    border: 2px solid var(--kleur-bordeaux-licht);
+    transition: var(--overgang);
+}
+
+.recht-kaart:hover {
+    border-color: var(--kleur-bordeaux);
+    transform: translateY(-5px);
+    box-shadow: var(--schaduw-md);
+}
+
+.recht-nummer {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    color: var(--kleur-off-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recht-kaart h4 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.recht-kaart p {
+    color: var(--kleur-grijs);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Beveiliging & Contact --- */
+/* Beveiliging Kaarten */
+.beveiliging-kaart {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--kleur-cream-donker);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.beveiliging-icoon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.beveiliging-tekst h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.beveiliging-tekst p {
+    color: var(--kleur-grijs);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Contact Privacy Kaart */
+.contact-privacy-kaart {
+    background: var(--kleur-cream-donker);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 3px solid var(--kleur-bordeaux);
+}
+
+.contact-privacy-kaart h3 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--kleur-bordeaux-donker);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-privacy-kaart > p {
+    color: var(--kleur-grijs);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.contact-privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-privacy-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contact-privacy-icoon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.contact-privacy-label {
+    font-weight: 600;
+    color: var(--kleur-bordeaux);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+
+.contact-privacy-item a {
+    color: var(--kleur-zwart);
+    font-weight: 500;
+    transition: var(--overgang);
+}
+
+.contact-privacy-item a:hover {
+    color: var(--kleur-bordeaux);
+}
+
+.contact-privacy-item p {
+    color: var(--kleur-zwart);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* --- Wijzigingen & CTA --- */
+/* Wijzigingen Kaart */
+.wijzigingen-kaart {
+    background: var(--kleur-cream-donker);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 5px solid var(--kleur-bordeaux);
+}
+
+.wijzigingen-kaart p {
+    color: var(--kleur-grijs);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.wijzigingen-kaart p:last-child {
+    margin-bottom: 0;
+}
+
+/* CTA Sectie */
+.privacy-cta {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
+    text-align: center;
+}
+
+.privacy-cta-inhoud h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--kleur-off-white);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.privacy-cta-inhoud p {
+    font-size: 1.125rem;
+    color: var(--kleur-cream);
+    margin-bottom: 2rem;
+}
+
+.knop-cta {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--kleur-off-white);
+    color: var(--kleur-bordeaux-donker);
+    border-radius: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: var(--overgang);
+    box-shadow: var(--schaduw-lg);
+}
+
+.knop-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--schaduw-xl);
+}
+
+/* --- Footer & Responsive --- */
+/* Footer Link */
+.footer-link-terug {
+    color: var(--kleur-cream);
+    font-weight: 600;
+    transition: var(--overgang);
+}
+
+.footer-link-terug:hover {
+    color: var(--kleur-off-white);
+    transform: translateX(-5px);
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-inhoud {
+        padding: 2rem;
+    }
+
+    .privacy-kaart-header {
+        padding: 2rem;
+    }
+
+    .privacy-info-kaart,
+    .cookies-kaart,
+    .beveiliging-kaart {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .gebruik-grid,
+    .rechten-grid,
+    .contact-privacy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .privacy-nummer {
+        font-size: 3rem;
+    }
+}
