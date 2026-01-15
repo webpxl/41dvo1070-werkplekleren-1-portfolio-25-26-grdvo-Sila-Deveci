@@ -1067,7 +1067,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
       background: var(--kleur-cream);
   }
 
-/* Hero Sectie */
 .privacy-hero {
     min-height: 50vh;
     display: flex;
@@ -1148,7 +1147,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     font-weight: 500;
 }
 
-/* Navigatie Terug */
 .nav-terug {
     display: flex;
     align-items: center;
@@ -1171,7 +1169,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     transform: translateX(-5px);
 }
 
-/* Secties */
 .privacy-sectie {
     padding: 3rem 0;
 }
@@ -1212,7 +1209,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     font-size: 1.25rem;
 }
 
-/* Info Kaarten */
 .privacy-info-kaart {
     display: flex;
     gap: 2rem;
@@ -1242,7 +1238,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin-bottom: 1rem;
 }
 
-/* Privacy Kaart */
 .privacy-kaart {
     background: var(--kleur-off-white);
     border-radius: 1.5rem;
@@ -1299,7 +1294,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     padding: 2.5rem;
 }
 
-/* Gebruik Grid & Kaarten */
 .gebruik-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1341,7 +1335,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* Cookies Kaarten */
 .cookies-kaart {
     display: flex;
     gap: 2rem;
@@ -1357,13 +1350,11 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     flex-shrink: 0;
 }
 
-/* --- Algemeen & Hero Sectie --- */
 .privacy-pagina {
     padding-top: 80px;
     background: var(--kleur-cream);
 }
 
-/* Hero Sectie */
 .privacy-hero {
     min-height: 50vh;
     display: flex;
@@ -1444,8 +1435,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     font-weight: 500;
 }
 
-/* --- Navigatie & Secties --- */
-/* Navigatie Terug */
 .nav-terug {
     display: flex;
     align-items: center;
@@ -1468,7 +1457,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     transform: translateX(-5px);
 }
 
-/* Secties */
 .privacy-sectie {
     padding: 3rem 0;
 }
@@ -1477,7 +1465,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     background: var(--kleur-off-white);
 }
 
-/* --- Privacy Kaarten & Inhoud --- */
 .privacy-kaart {
     background: var(--kleur-off-white);
     border-radius: 1.5rem;
@@ -1566,8 +1553,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     font-size: 1.25rem;
 }
 
-/* --- Info & Gebruik Kaarten --- */
-/* Info Kaarten */
 .privacy-info-kaart {
     display: flex;
     gap: 2rem;
@@ -1597,7 +1582,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin-bottom: 1rem;
 }
 
-/* Gebruik Grid */
 .gebruik-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1639,8 +1623,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* --- Cookies & Rechten --- */
-/* Cookies Kaarten */
 .cookies-kaart {
     display: flex;
     gap: 2rem;
@@ -1670,7 +1652,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* Rechten Grid */
 .rechten-intro {
     font-size: 1.125rem;
     color: var(--kleur-grijs);
@@ -1727,8 +1708,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* --- Beveiliging & Contact --- */
-/* Beveiliging Kaarten */
 .beveiliging-kaart {
     display: flex;
     gap: 2rem;
@@ -1758,7 +1737,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* Contact Privacy Kaart */
 .contact-privacy-kaart {
     background: var(--kleur-cream-donker);
     padding: 2.5rem;
@@ -1822,8 +1800,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin: 0;
 }
 
-/* --- Wijzigingen & CTA --- */
-/* Wijzigingen Kaart */
 .wijzigingen-kaart {
     background: var(--kleur-cream-donker);
     padding: 2rem;
@@ -1841,7 +1817,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     margin-bottom: 0;
 }
 
-/* CTA Sectie */
 .privacy-cta {
     padding: 6rem 0;
     background: linear-gradient(135deg, var(--kleur-bordeaux-donker), var(--kleur-bordeaux));
@@ -1880,8 +1855,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     box-shadow: var(--schaduw-xl);
 }
 
-/* --- Footer & Responsive --- */
-/* Footer Link */
 .footer-link-terug {
     color: var(--kleur-cream);
     font-weight: 600;
@@ -1894,7 +1867,6 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     display: inline-block;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .privacy-inhoud {
         padding: 2rem;
